@@ -26,6 +26,13 @@ kotlin {
 }
 
 android {
-    compileSdk = 33
+    compileSdk = 34
     namespace = "com.gary.kotlinfromscratch"
+    defaultConfig {
+        applicationId = "com.gary.kotlinfromscratch"
+        minSdk = 21
+        targetSdk = 34
+        versionCode = 1
+        versionName = "1.0"
+    }
 }
