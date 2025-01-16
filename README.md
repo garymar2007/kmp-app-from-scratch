@@ -28,4 +28,12 @@ Step 7: Writing the first #Composable function: MainScreen.kt in app/src/commonM
 
 Step 8: Creating the MainActivity in app/src/androidMain/kotlin/<name_space>/
 
+
+Reference:
+Video: https://www.youtube.com/watch?v=fmFezt-2IBo
+
+source code: https://github.com/garymar2007/kmp-app-from-scratch
+
+19:14
+
     
