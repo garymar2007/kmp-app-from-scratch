@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
+
 plugins {
     kotlin("multiplatform")
     kotlin("plugin.compose")
@@ -6,6 +8,8 @@ plugins {
 }
 
 kotlin {
+    jvmToolchain(21)
+
     jvm()
     androidTarget()
 
@@ -34,5 +38,12 @@ android {
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
+    }
+}
+
+kotlin.targets.withType<KotlinNativeTarget>().configureEach {
+    binaries.framework {
+        baseName = "kmp-app-from-scratch"
+        isStatic = true
     }
 }
